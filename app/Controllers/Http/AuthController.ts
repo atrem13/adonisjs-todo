@@ -23,7 +23,7 @@ export default class AuthController {
         user.password = userDetails.password
 
         await user.save()
-        await auth.login(user);
+        // await auth.login(user);
 
         response.redirect('/dashboard')
     }
